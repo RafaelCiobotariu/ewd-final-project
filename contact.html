@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Rafael Ciobotariu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <a href="index.html" class="logo">Rafael Ciobotariu</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="data.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section aria-labelledby="contact-heading">
+        <h1 id="contact-heading">Get in Touch</h1>
+        <p>
+          Whether you have a project idea, a job opportunity, a collaboration
+          proposal, or just want to say hi — I'd love to hear from you. Fill in
+          the form below and I'll get back within 48 hours.
+        </p>
+
+        <div class="form-card">
+          <form
+            action="#"
+            method="post"
+            novalidate
+            aria-labelledby="contact-heading"
+          >
+            <!-- Personal information group -->
+            <fieldset>
+              <legend>Your Information</legend>
+
+              <div class="form-group">
+                <label for="name"
+                  >Full Name
+                  <span class="req" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Maria Ionescu"
+                  required
+                  aria-required="true"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  >Email Address
+                  <span class="req" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  aria-required="true"
+                  autocomplete="email"
+                />
+              </div>
+            </fieldset>
+
+            <!-- Message group -->
+            <fieldset>
+              <legend>Your Message</legend>
+
+              <div class="form-group">
+                <label for="subject"
+                  >Subject / Topic
+                  <span class="req" aria-hidden="true">*</span></label
+                >
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="job">Job or Internship Opportunity</option>
+                  <option value="freelance">Freelance Project</option>
+                  <option value="collab">Collaboration / Open Source</option>
+                  <option value="feedback">Portfolio Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message"
+                  >Message <span class="req" aria-hidden="true">*</span></label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell me about your project or question…"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <!-- Preferences group -->
+            <fieldset>
+              <legend>Preferences</legend>
+
+              <div class="form-group">
+                <label>Preferred reply method</label>
+                <div
+                  class="radio-group"
+                  role="radiogroup"
+                  aria-label="Preferred reply method"
+                >
+                  <label>
+                    <input
+                      type="radio"
+                      name="reply_method"
+                      value="email"
+                      checked
+                    />
+                    Email
+                  </label>
+                  <label>
+                    <input type="radio" name="reply_method" value="linkedin" />
+                    LinkedIn message
+                  </label>
+                  <label>
+                    <input type="radio" name="reply_method" value="any" />
+                    Either is fine
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >I'm interested in (optional — check all that apply)</label
+                >
+                <div class="check-group">
+                  <label>
+                    <input type="checkbox" name="interest" value="frontend" />
+                    Front-End Development
+                  </label>
+                  <label>
+                    <input type="checkbox" name="interest" value="fullstack" />
+                    Full-Stack Development
+                  </label>
+                  <label>
+                    <input type="checkbox" name="interest" value="ux" />
+                    UX / Accessibility Consulting
+                  </label>
+                  <label>
+                    <input type="checkbox" name="interest" value="mentoring" />
+                    Peer Mentoring / Study Group
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Rafael Ciobotariu &mdash; Junior Developer Portfolio &bull;
+        <a href="contact.html">Get in touch</a>
+      </p>
+    </footer>
+  </body>
+</html>

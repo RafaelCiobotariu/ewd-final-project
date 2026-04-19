@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Ciobotariu — Junior Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Rafael Ciobotariu</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="data.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Intro -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Building things for the web</h1>
+      <p class="tagline">
+        Hi, I'm Rafael — a junior front-end developer based in Timișoara, Romania.
+        I turn ideas into accessible, clean web experiences.
+      </p>
+    </section>
+
+    <!-- Featured Projects -->
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Recent Projects</h2>
+      <p>A few things I've built. See all details on the <a href="data.html">Projects page</a>.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>WeatherNow</h3>
+          <p>A responsive weather dashboard that fetches live data from a public API with a 7-day forecast.</p>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">CSS Grid</span>
+          <span class="tech-tag">REST API</span><br>
+          <a href="data.html" class="card-link" aria-label="View WeatherNow project details">View details →</a>
+        </article>
+
+        <article class="card">
+          <h3>TaskBoard</h3>
+          <p>A drag-and-drop Kanban board built with React, with local-storage persistence and keyboard navigation.</p>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">CSS Modules</span>
+          <span class="tech-tag">LocalStorage</span><br>
+          <a href="data.html" class="card-link" aria-label="View TaskBoard project details">View details →</a>
+        </article>
+
+        <article class="card">
+          <h3>ReadMe Generator</h3>
+          <p>A Node.js CLI that scaffolds professional README files from interactive prompts.</p>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Inquirer</span>
+          <span class="tech-tag">CLI</span><br>
+          <a href="data.html" class="card-link" aria-label="View ReadMe Generator project details">View details →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Latest Updates -->
+    <section aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Latest Updates</h2>
+      <ul class="update-list" aria-label="Recent activity">
+        <li>
+          <span class="update-date">Apr 2026</span>
+          <div><strong>Deployed portfolio v2</strong> — rebuilt with semantic HTML and improved accessibility score (Lighthouse 98).</div>
+        </li>
+        <li>
+          <span class="update-date">Mar 2026</span>
+          <div><strong>Open-sourced TaskBoard</strong> — pushed to GitHub with full keyboard navigation and ARIA live regions.</div>
+        </li>
+        <li>
+          <span class="update-date">Feb 2026</span>
+          <div><strong>Completed React course</strong> — 40-hour certified curriculum covering hooks, routing, and state management.</div>
+        </li>
+        <li>
+          <span class="update-date">Jan 2026</span>
+          <div><strong>First freelance contract</strong> — built a landing page for a local NGO with a donation widget and CMS.</div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Rafael Ciobotariu &mdash; <a href="contact.html">Get in touch</a></p>
+  </footer>
+
+</body>
+</html>
