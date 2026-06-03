@@ -1,0 +1,972 @@
+/* auth.page */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 100px;
+gap: 100px;
+
+position: relative;
+width: 2120px;
+height: 1400px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+
+width: 1920px;
+height: 1200px;
+min-height: 1200px;
+
+/* White Catskill White */
+background: linear-gradient(0deg, #f8fafc, #f8fafc), #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Left Panel */
+
+width: 960px;
+height: 1200px;
+
+background: linear-gradient(141.34deg, #667eea 0%, #764ba2 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+/* Heading 1:margin */
+
+position: absolute;
+width: 223.33px;
+height: 129.59px;
+left: 64px;
+top: 419.41px;
+
+/* Heading 1 → Bun venit
+înapoi. */
+
+position: absolute;
+width: 256px;
+height: 41px;
+left: 0px;
+top: 35.59px;
+
+/* Semantic/Heading 1 */
+font-family: "Inter";
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 53px;
+/* or 110% */
+display: flex;
+align-items: center;
+
+/* White */
+color: #ffffff;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 43.39px 0.69px 0px;
+
+position: absolute;
+width: 380px;
+max-width: 380px;
+height: 58.69px;
+left: 64px;
+top: calc(50% - 58.69px / 2 - 23.76px);
+
+/* Platforma ta pentru colaborare rapidă și sigură, oriunde te-ai afla. */
+
+width: 338px;
+height: 58px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 29px;
+/* or 160% */
+display: flex;
+align-items: center;
+
+/* White 88% */
+color: rgba(255, 255, 255, 0.88);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Margin */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 48px 0px 0px;
+
+position: absolute;
+width: 232px;
+height: 142px;
+left: 64px;
+top: 622.59px;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 232px;
+height: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 232px;
+height: 22px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Overlay */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 22px;
+height: 22px;
+
+/* White 20% */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 11px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* ✓ */
+
+width: 11px;
+height: 15px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Securitate end-to-end */
+
+width: 159px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 232px;
+height: 22px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Overlay */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 22px;
+height: 22px;
+
+/* White 20% */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 11px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* ✓ */
+
+width: 11px;
+height: 15px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Acces de pe orice dispozitiv */
+
+width: 200px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 232px;
+height: 22px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Overlay */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 22px;
+height: 22px;
+
+/* White 20% */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 11px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* ✓ */
+
+width: 11px;
+height: 15px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Colaborare în timp real */
+
+width: 161px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* White 90% */
+color: rgba(255, 255, 255, 0.9);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Right Panel */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 64px;
+
+width: 960px;
+height: 1200px;
+
+/* White */
+background: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 400px;
+max-width: 400px;
+height: 310px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Heading 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 400px;
+height: 34px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conectează-te */
+
+width: 400px;
+height: 34px;
+
+/* Semantic/Heading 2 */
+font-family: "Inter";
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Mirage */
+color: #1e293b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 400px;
+height: 17px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Introdu datele contului tău pentru a continua. */
+
+width: 400px;
+height: 17px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Slate Gray */
+color: #64748b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Form */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 0px 0px;
+gap: 20px;
+
+width: 400px;
+height: 243px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Email */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 400px;
+height: 67px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 400px;
+height: 17px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Adresă de email */
+
+width: 400px;
+height: 17px;
+
+/* Semantic/Label */
+font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Mirage */
+color: #1e293b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+width: 400px;
+height: 42px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 40px 11px 14px;
+
+width: 400px;
+height: 42px;
+
+/* White */
+background: #ffffff;
+/* Mystic */
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 344px;
+height: 18px;
+
+opacity: 0.55;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+/* tu@exemplu.com */
+
+width: 344px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* Slate Gray */
+color: #64748b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 15px;
+right: 11.83px;
+top: 30.95%;
+bottom: 29.4%;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+/* @ */
+
+width: 15px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* Slate Gray */
+color: #64748b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Password */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 400px;
+height: 67px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 400px;
+height: 17px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Parolă */
+
+width: 400px;
+height: 17px;
+
+/* Semantic/Label */
+font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Mirage */
+color: #1e293b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+width: 400px;
+height: 42px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Input */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 40px 11px 14px;
+
+width: 400px;
+height: 42px;
+
+/* White */
+background: #ffffff;
+/* Mystic */
+border: 1px solid #e2e8f0;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 344px;
+height: 18px;
+
+opacity: 0.55;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+/* Minim 8 caractere */
+
+width: 344px;
+height: 18px;
+
+/* Inter/Regular */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* Slate Gray */
+color: #64748b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 53px;
+right: 13.28px;
+top: 32.14%;
+bottom: 32.7%;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+/* Afișează */
+
+width: 53px;
+height: 16px;
+
+/* Semantic/Button */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Slate Gray */
+color: #64748b;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Button - Submit */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 24px;
+
+width: 400px;
+height: 45px;
+
+/* Royal Blue */
+background: #2563eb;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conectează-te */
+
+width: 116px;
+height: 19px;
+
+/* Semantic/Button */
+font-family: "Inter";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* White */
+color: #ffffff;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

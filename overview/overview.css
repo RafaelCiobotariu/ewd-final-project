@@ -1,0 +1,291 @@
+/* Navbar styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+.site-header {
+  background-color: white;
+  border-bottom: 2px solid #2563eb;
+  padding: 15px 20px;
+  overflow: hidden;
+}
+
+.site-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+  float: left;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav ul li {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.site-nav a {
+  color: #333333;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-nav a[aria-current="page"] {
+  background-color: #2563eb;
+  color: white;
+  border-radius: 4px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eeeeee;
+  border-top: 1px solid #cccccc;
+  color: #666666;
+  font-size: 14px;
+}
+
+.overview-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0 0 10px 0;
+  color: #1f2937;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Skills section using Flexbox */
+.skills-section h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #93c5fd;
+}
+
+.projects-section h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+.project-card:first-child {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.project-card:first-child h3,
+.project-card:first-child p {
+  color: white;
+}
+
+.project-card:first-child .project-link {
+  color: white;
+  border-color: white;
+}
+
+.project-card:first-child .project-link:hover {
+  background-color: white;
+  color: #667eea;
+}
+
+.project-card h3 {
+  margin: 0 0 12px 0;
+  color: #1f2937;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech-tag-small {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.project-link {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.contact-section {
+  background-color: #1f2937;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-section h2 {
+  margin: 0 0 20px 0;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d1d5db;
+}
+
+.contact-item a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+
+/* Responsive design - media query for small screens */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .profile-section,
+  .contact-section {
+    padding: 20px;
+  }
+}

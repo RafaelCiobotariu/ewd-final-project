@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Assistant Chatbot — Rafael Ciobotariu</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">Rafael Ciobotariu</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../data/data.html">Projects</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../overview/overview.html">Overview</a></li>
+        <li><a href="../chatbot/chatbot.html" aria-current="page">Chatbot</a></li>
+        <li><a href="../card/card.html">Card</a></li>
+        <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="chatbot-section" aria-labelledby="chatbot-heading">
+      <h1 id="chatbot-heading">Developer Assistant Chatbot</h1>
+      <p class="chatbot-intro">
+        Ask me anything about web development, programming, or my projects!
+        Select a question from the list or type your own.
+      </p>
+
+      <div class="chatbot-container">
+
+        <!-- Chat messages area -->
+        <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-atomic="false">
+          <div class="message bot-message">
+            <div class="message-avatar">🤖</div>
+            <div class="message-content">
+              <p>Hello! I'm your Developer Assistant. How can I help you today?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick questions -->
+        <div class="quick-questions">
+          <p class="quick-questions-label">Quick questions:</p>
+          <div id="quick-questions-container" class="quick-questions-buttons">
+            <!-- Quick question buttons will be inserted here by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Input form -->
+        <form id="chat-form" class="chat-form">
+          <label for="user-input" class="visually-hidden">Type your message</label>
+          <input
+            type="text"
+            id="user-input"
+            class="chat-input"
+            placeholder="Type your question here..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="chat-submit">Send</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Rafael Ciobotariu &mdash; <a href="../contact/contact.html">Get in touch</a></p>
+  </footer>
+
+  <script src="chatbot.js"></script>
+
+</body>
+</html>

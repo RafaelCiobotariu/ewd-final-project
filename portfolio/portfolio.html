@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Rafael Ciobotariu</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">Rafael Ciobotariu</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../data/data.html">Projects</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../overview/overview.html">Overview</a></li>
+        <li><a href="../chatbot/chatbot.html">Chatbot</a></li>
+        <li><a href="../card/card.html">Card</a></li>
+        <li><a href="../portfolio/portfolio.html" aria-current="page">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="portfolio-hero" aria-labelledby="portfolio-heading">
+      <h1 id="portfolio-heading">My Project Portfolio</h1>
+      <p class="tagline">
+        Add and showcase your personal projects. Fill out the form below and
+        each project will appear in the table — complete with a thumbnail,
+        live link, and removal option.
+      </p>
+    </section>
+
+    <!-- Success / status region -->
+    <div
+      id="success-msg"
+      class="success-msg"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+
+    <!-- ─── Add Project Form ─────────────────────────────── -->
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Add a New Project</h2>
+
+      <div class="form-card">
+        <form id="project-form" novalidate aria-labelledby="form-heading">
+
+          <!-- Project details -->
+          <fieldset>
+            <legend>Project Details</legend>
+
+            <div class="form-group">
+              <label for="proj-name">
+                Project Name <span class="req" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="proj-name"
+                name="proj-name"
+                required
+                aria-required="true"
+                aria-describedby="proj-name-error"
+                placeholder="e.g. WeatherNow"
+                autocomplete="off"
+              />
+              <span id="proj-name-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="proj-desc">
+                Description <span class="req" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="proj-desc"
+                name="proj-desc"
+                rows="4"
+                required
+                aria-required="true"
+                aria-describedby="proj-desc-error"
+                placeholder="Describe your project in at least 20 characters…"
+              ></textarea>
+              <span id="proj-desc-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="proj-url">
+                Project URL <span class="req" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="url"
+                id="proj-url"
+                name="proj-url"
+                required
+                aria-required="true"
+                aria-describedby="proj-url-error"
+                placeholder="https://github.com/username/project"
+              />
+              <span id="proj-url-error" class="field-error" role="alert"></span>
+            </div>
+          </fieldset>
+
+          <!-- Technologies & timeline -->
+          <fieldset>
+            <legend>Technologies &amp; Timeline</legend>
+
+            <div class="form-group">
+              <label for="proj-tech">
+                Primary Technology <span class="req" aria-hidden="true">*</span>
+              </label>
+              <select
+                id="proj-tech"
+                name="proj-tech"
+                required
+                aria-required="true"
+                aria-describedby="proj-tech-error"
+              >
+                <option value="" disabled selected>Select a technology…</option>
+                <option value="HTML/CSS">HTML / CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Node.js">Node.js</option>
+                <option value="Python">Python</option>
+                <option value="TypeScript">TypeScript</option>
+                <option value="Other">Other</option>
+              </select>
+              <span id="proj-tech-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="proj-date">
+                Completion Date <span class="req" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="date"
+                id="proj-date"
+                name="proj-date"
+                required
+                aria-required="true"
+                aria-describedby="proj-date-error"
+              />
+              <span id="proj-date-error" class="field-error" role="alert"></span>
+            </div>
+          </fieldset>
+
+          <!-- Media (optional) -->
+          <fieldset>
+            <legend>Media <span class="legend-optional">(Optional)</span></legend>
+
+            <div class="form-group">
+              <label for="proj-image">Project Thumbnail</label>
+              <input
+                type="file"
+                id="proj-image"
+                name="proj-image"
+                accept="image/*"
+                aria-describedby="proj-image-hint proj-image-error"
+              />
+              <span id="proj-image-hint" class="field-hint">
+                Accepted formats: JPG, PNG, GIF, WebP. Recommended max size: 2 MB.
+              </span>
+              <span id="proj-image-error" class="field-error" role="alert"></span>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Add Project</button>
+            <button type="reset" id="reset-btn" class="btn-reset">Reset Form</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ─── Projects Table ───────────────────────────────── -->
+    <section aria-labelledby="table-heading">
+      <h2 id="table-heading">Submitted Projects</h2>
+
+      <p id="table-empty-msg" class="table-empty-msg">
+        No projects added yet. Fill in the form above to add your first project.
+      </p>
+
+      <div
+        class="table-wrapper"
+        id="table-wrapper"
+        role="region"
+        aria-label="Submitted projects"
+        tabindex="0"
+      >
+        <table id="projects-table">
+          <caption>My Personal Project Portfolio</caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Project Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">URL</th>
+              <th scope="col">Technologies</th>
+              <th scope="col">Thumbnail</th>
+              <th scope="col">Completion Date</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="projects-tbody">
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Rafael Ciobotariu &mdash; <a href="../contact/contact.html">Get in touch</a></p>
+  </footer>
+
+  <script src="portfolio.js" defer></script>
+</body>
+</html>

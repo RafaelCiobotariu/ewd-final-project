@@ -1,0 +1,9 @@
+/* External CSS for specificity exercise */
+
+h1 {
+    color: purple;
+    font-style: normal;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
